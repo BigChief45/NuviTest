@@ -4,6 +4,8 @@ This application downloads all of the zip files, extracts out the xml files, and
 
 The application is idempotent. It can be run multiple times and not get duplicate data in the redis list.
 
+_**NOTE:** `'NEWS_XML'` (the name originally given to me in the e-mail) is an invalid list name for redis, the list name must be in lowercase letters._
+
 ## Environment Information
 I wrote and tested this Ruby application in a **Ubuntu 14.04.3 trusty** environment, using **Ruby 2.3.0**.
 
