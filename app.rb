@@ -20,7 +20,7 @@ BASE_URL = 'http://feed.omgili.com/5Rh5AMTrc4Pv/mainstream/posts'
 # redis = Redis.new(:host => "10.0.1.1", :port => 6380, :db => 15)
 redis = Redis.new
 
-# IDEMPOTENCY!: Clear list, if exists
+# Clear list, if exists
 redis.del(REDIS_LIST)
 
 # Get the HTTP server .zip files directory page HTML content
