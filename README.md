@@ -9,6 +9,17 @@ _**NOTE:** `'NEWS_XML'` (the name originally given to me in the e-mail) is an in
 ## Environment Information
 I wrote and tested this Ruby application in a **Ubuntu 14.04.3 trusty** environment, using **Ruby 2.3.0**.
 
+## Usage
+First, install the required gems:
+
+`gem install rubyzip redis nokogiri`
+
+If you are experiencing problems with Nokogiri, read [this](http://www.nokogiri.org/tutorials/installing_nokogiri.html) for help.
+
+Run the application:
+
+`ruby app.rb`
+
 ## Dependencies
 This application makes use of the following libraries and gems:
 - `open_uri`: For downloading the .zip files from the HTTP server
