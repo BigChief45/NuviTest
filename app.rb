@@ -28,7 +28,7 @@ zip_directories_html = open(BASE_URL, 'rb').read
 
 # Now we can use Nokogiri gem to parse the HTML and obtain each href value
 # This is not the approach I had in mind but I couldn't find a way to
-# iterate through al files in the HTTP server directory using open-uri.
+# iterate through all files in the HTTP server directory using open-uri.
 zip_files = []
 zip_directories_html.each_line do |line|
     line_data = Nokogiri::HTML(line)
@@ -64,4 +64,4 @@ zip_files.each do |z|
 end
 
 end_time = Time.now
-puts "Task finished. Total time elapsed: #{(end_time - beginning_time)*1000} milliseconds"
+puts "Task finished. Total elapsed time: #{(end_time - beginning_time)*1000} milliseconds"
